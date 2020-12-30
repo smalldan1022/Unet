@@ -63,7 +63,7 @@ Unet
 ### Make a csv file, you need to manually use different parameters
 
 
-#### For the train image csvfile
+#### For the train image csvfile (bash command)
 
 ```bash
 find $PWD/Train/images/* -iname "*.jpg" | awk -F'/' 'BEGIN{OFS=",";print"Path,Y,ID"}{print $0,$6,$8}' > Train_image.csv
@@ -90,7 +90,7 @@ Assume you have all the needed dataset. If not, go through the [Pre-requisites](
 ``` bash
 python Unet.main.py
 
-# You can modify the hyperparameters in the u2net_train.py, like:
+# You can modify the hyperparameters in the Unet_main.py, like:
 # epoch = 1000
 # learning rate = 0.0001
 # callbacks = [x, y, z]
