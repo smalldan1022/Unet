@@ -8,9 +8,11 @@ class Unet(tf.keras.Model):
 
         super(Unet, self).__init__()
         
+
         # Make the first conv layers of Unet
 
-        self.conv_input = tf.keras.layers.Conv2D(filters=64, kernel_size=(3,3), padding='same', input_shape = (512, 512, 3), data_format="channels_last", activation='relu', use_bias=True,
+        self.conv_input = tf.keras.layers.Conv2D(filters=64, kernel_size=(3,3), padding='same', input_shape = (512, 512, 3), data_format="channels_last", 
+                                                 activation='relu', use_bias=True,
                                                  kernel_initializer='glorot_uniform')
         
         # Make the forward conv layers of Unet
@@ -93,6 +95,6 @@ class Unet(tf.keras.Model):
         concat_one = self.Concatenate([up_one, one])
         concat_one = self.conv_64[1](concat_one)
         concat_one = self.conv_64[2](concat_one)
-        final = self.final_conv_1(concat_one)
+        output = self.final_conv_1(concat_one)
         
-        return final
+        return output
