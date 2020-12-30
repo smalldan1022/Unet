@@ -8,7 +8,6 @@ class Unet(tf.keras.Model):
 
         super(Unet, self).__init__()
         
-
         # Make the first conv layers of Unet
 
         self.conv_input = tf.keras.layers.Conv2D(filters=64, kernel_size=(3,3), padding='same', input_shape = (512, 512, 3), data_format="channels_last", 
