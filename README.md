@@ -1,4 +1,3 @@
-Unet
 # Unet architecture using tensorflow 2.2
 
 
