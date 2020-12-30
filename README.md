@@ -15,7 +15,8 @@ Unet is an architecture used widely in medical field to solve the high resolutio
 
 
     1.MakeDataset.py
-        For the purpose of making a dataset by the tensorflow iterator, tf.data.Dataset, which is faster than using python list to read images.
+        For the purpose of making a dataset by the tensorflow iterator, tf.data.Dataset, which is faster than 
+        using python list to read images.
 
     2.Unet_model.py
         To make the Unet model by using tensorflow inheritance, tf.keras.Model. You can use the Model func for sure, it's up to you.
