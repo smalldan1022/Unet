@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
+
+
 # Plot the results
 
 def plot_model_result(train_history):
@@ -66,6 +68,7 @@ def Fill_hole(img):
     cv2.drawContours(img_copy,contours,-1,(255,255,255),-1)
 
     return img_copy
+
 
 
 # Set the correct size of the buttom image and upper image , set the channel value of the upper image
