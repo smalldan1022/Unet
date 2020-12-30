@@ -19,12 +19,15 @@ Unet is an architecture used widely in medical field to solve the high resolutio
         using python list to read images.
 
     2.Unet_model.py
-        To make the Unet model by using tensorflow inheritance, tf.keras.Model. You can use the Model func for sure, it's up to you.
+        To make the Unet model by using tensorflow inheritance, tf.keras.Model. You can use the Model func for 
+        sure, it's up to you.
 
     3.utils.py
-        Provide the utilities for you to visualize the results of your AI model. There are also some image processing methods for you to enhance the segmentation results using the opencv.
+        Provide the utilities for you to visualize the results of your AI model. There are also some image 
+        processing methods for you to enhance the segmentation results using the opencv.
     4.Unet_main.py
-        The main function to control the whole process of the Unet model training. There are lots of thing you can tune yourself in it, like the hyperparameters and the callbacks. Feel free to modify it yourself.
+        The main function to control the whole process of the Unet model training. There are lots of thing you 
+        can tune yourself in it, like the hyperparameters and the callbacks. Feel free to modify it yourself.
 
 
 
