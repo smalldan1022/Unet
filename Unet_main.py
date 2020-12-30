@@ -46,19 +46,15 @@ if __name__ == "__main__":
         
         valid_mask_paths.append(mask_path)
         
-
-
     # Make the train/valid dataset
 
     train_dataset = MD.MakeDataset(train_img_paths, train_mask_paths, shuffle_num=len(train_img_paths) , batch=4)
 
     valid_dataset = MD.MakeDataset(valid_img_paths, valid_mask_paths, shuffle_num=len(valid_img_paths) , batch=1)
 
-
     # Get the Unet model
 
     model = U.Unet()
-    
 
     # FIXME: There is a bug in this callback func, ModelCheckpoint. It should save the entire model instead of only the weights.
     #        If you want to get rid of it, you can simply use the "model.save" func.
