@@ -13,11 +13,6 @@ import utils
 import MakeDataset as MD
 
 
-
-
-
-
-
 if __name__ == "__main__":
 
     # Set the GPU you want to use
