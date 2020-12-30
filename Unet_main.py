@@ -27,7 +27,6 @@ if __name__ == "__main__":
     train_img_paths = train_df[train_df.Y=="train_image"].Path.values
     valid_img_paths = valid_df[valid_df.Y=="valid_image"].Path.values
 
-
     train_mask_paths = []
     valid_mask_paths = []
 
