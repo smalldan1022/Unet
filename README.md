@@ -15,9 +15,6 @@ Unet is an architecture used widely in medical field to solve the high resolutio
 ## Explanation
 
 
-![pipeline](https://github.com/smalldan1022/Corneal-ulcer/blob/master/pictures/TrainProcess.png)
-
-
     1.MakeDataset.py
         For the purpose of making a dataset by the tensorflow iterator, tf.data.Dataset, which is faster than using python list to read images.
 
