@@ -1,6 +1,4 @@
-
 import tensorflow as tf 
-
 
 # Use the tf function to accelerate the image reading speed
 
