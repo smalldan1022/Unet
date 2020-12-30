@@ -8,12 +8,9 @@ class Unet(tf.keras.Model):
 
         super(Unet, self).__init__()
         
-
         # Make the first conv layers of Unet
 
-        self.conv_input = tf.keras.layers.Conv2D(filters=64, kernel_size=(3,3), padding='same',
-                                                 input_shape = (512, 512, 3), data_format="channels_last", 
-                                                 activation='relu', use_bias=True,
+        self.conv_input = tf.keras.layers.Conv2D(filters=64, kernel_size=(3,3), padding='same', input_shape = (512, 512, 3), data_format="channels_last", activation='relu', use_bias=True,
                                                  kernel_initializer='glorot_uniform')
         
         # Make the forward conv layers of Unet
@@ -35,8 +32,6 @@ class Unet(tf.keras.Model):
         for ii in range(2):
             self.conv_1024.append(tf.keras.layers.Conv2D(filters=1024, kernel_size=(3,3), padding='same', activation='relu', use_bias=True, kernel_initializer='glorot_uniform'))
 
-
-
         # Make others layers that won't be an error when it is used repeatedly
 
         self.Maxpool = tf.keras.layers.MaxPool2D()
@@ -49,7 +44,6 @@ class Unet(tf.keras.Model):
         self.up_conv_256 = tf.keras.layers.Conv2D(filters=256, kernel_size=(2,2), padding='same', activation='relu', use_bias=True, kernel_initializer='glorot_uniform')
         self.up_conv_128 = tf.keras.layers.Conv2D(filters=128, kernel_size=(2,2), padding='same', activation='relu', use_bias=True, kernel_initializer='glorot_uniform')
         self.up_conv_64 = tf.keras.layers.Conv2D(filters=64, kernel_size=(2,2), padding='same', activation='relu', use_bias=True, kernel_initializer='glorot_uniform')
-
 
         # Make the final conv layer
 
