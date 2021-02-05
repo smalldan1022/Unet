@@ -85,6 +85,11 @@ if __name__ == "__main__":
 
     # model.summary()
 
+    # You need to change the save path here
+    save_path = "/home/smalldan/DeepLearningModels/Git/通用/測試中/model"
+
+    model.save(save_path)
+
     # Plot the figures
 
     os.chdir("/home/smalldan/DeepLearningModels/Git/通用/測試中/")
