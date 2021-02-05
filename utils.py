@@ -3,7 +3,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-
 # Plot the results
 
 def plot_model_result(train_history):
@@ -86,9 +85,6 @@ def Set_channel_values(infer, origin, R, G, B):
     (h, w, _) = infer.shape
 
     origin = origin[0:h,0:w]
-
-    print(origin.shape, infer.shape)
-
 
     infer[:,:,0][infer[:,:,0]==1] = B
     infer[:,:,1][infer[:,:,1]==1] = G
