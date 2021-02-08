@@ -1,9 +1,9 @@
 # Unet architecture using tensorflow 2.2
 
 
-[![Logo](https://github.com/smalldan1022/Unet/blob/master/pics/Dan_Logo_3.png)]
+![Logo](https://github.com/smalldan1022/Unet/blob/master/pics/Dan_Logo_3.png)
 
-[![Website online](https://img.shields.io/website/http/huggingface.co/transformers/index.html.svg?down_color=red&down_message=offline&up_message=online)](https://github.com/smalldan1022)
+[![Dan Website](https://img.shields.io/website/http/huggingface.co/transformers/index.html.svg?down_color=red&down_message=offline&up_message=online)](https://github.com/smalldan1022)
 
 
 ## Introduction
