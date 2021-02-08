@@ -31,6 +31,10 @@ Unet is an architecture used widely in medical field to solve the high resolutio
         can tune yourself in it, like the hyperparameters and the callbacks. Feel free to modify it yourself.
 
 
+## Results
+
+![results](https://github.com/smalldan1022/Unet/blob/master/pics/Diagram_1.png)
+
 
 ## Check list
 
